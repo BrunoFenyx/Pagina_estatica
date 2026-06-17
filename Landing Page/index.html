@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooperativa - Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        /* Ajuste para que el navbar fijo no tape el inicio de las secciones al scrollear */
+        section {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .member-avatar {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Nuestra Cooperativa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quienes-somos">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#donde-operamos">Dónde Operamos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#agua-potable">Agua Potable</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#centros-medicos">Centros Médicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#comision">Nuestra Comisión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="quienes-somos" class="bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="logo2.png" alt="Quiénes Somos" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-3">Quiénes Somos</h2>
+                    <p class="lead text-muted">
+                        Somos una organización solidaria comprometida con el desarrollo sostenible y el bienestar de nuestra comunidad. Trabajamos día a día para gestionar recursos esenciales con transparencia y equidad.
+                    </p>
+                    <p>
+                        Nuestra cooperativa nació de la unión de vecinos que buscaban soluciones colectivas a necesidades comunes. Hoy, seguimos creciendo bajo los mismos valores de ayuda mutua, responsabilidad y compromiso social.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="donde-operamos">
+        <div class="container-fluid px-0">
+            <div class="container mb-4">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h2 class="fw-bold">Dónde Operamos</h2>
+                        <p class="text-muted">Somos uno de los proveedores de agua mas extensos de la provincia.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ratio ratio-21x9 bg-secondary-subtle" style="min-height: 350px;">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1lHXxnw5LdJkIPAY2cMiEFg_5NoZfQVE&ehbc=2E312F&noprof=1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="agua-potable" class="bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-2 mb-4 mb-md-0">
+                    <img src="https://images.unsplash.com/photo-1548936568-d010d4225576?auto=format&fit=crop&w=600&q=80" alt="Servicio de Agua Potable" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h2 class="fw-bold mb-3">Servicio de Agua Potable</h2>
+                    <p class="lead text-muted">
+                        Garantizamos el acceso a un recurso vital bajo los más estrictos controles de calidad.
+                    </p>
+                    <p>
+                        Escriba aquí la información detallada sobre la planta potabilizadora, las redes de distribución, el mantenimiento del sistema y los planes de pago o asistencia al usuario. Nos enfocamos en cuidar el agua y asegurar que llegue de forma eficiente a cada hogar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="centros-medicos">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=600&q=80" alt="Centros Médicos" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-3">Centros Médicos</h2>
+                    <p class="lead text-muted">
+                        Salud al alcance de todos nuestros asociados con atención profesional y calificada.
+                    </p>
+                    <p>
+                        Escriba aquí los detalles de la infraestructura médica, las especialidades disponibles (pediatría, clínica médica, odontología), los horarios de atención y las sedes o consultorios con los que cuenta la entidad para el beneficio de la comunidad.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="comision" class="bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="fw-bold">Nuestra Comisión</h2>
+                    <p class="text-muted">El equipo directivo que trabaja con transparencia por el futuro de la cooperativa.</p>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 col-lg-2-5 col-sm-6 text-center">
+                    <div class="card h-100 border-0 bg-transparent">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" alt="Presidente" class="member-avatar shadow">
+                        <div class="card-body p-0">
+                            <h5 class="fw-bold mb-1">Ana Gómez</h5>
+                            <p class="text-primary small fw-semibold">Presidenta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2-5 col-sm-6 text-center">
+                    <div class="card h-100 border-0 bg-transparent">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="Vicepresidente" class="member-avatar shadow">
+                        <div class="card-body p-0">
+                            <h5 class="fw-bold mb-1">Carlos Pérez</h5>
+                            <p class="text-primary small fw-semibold">Vicepresidente</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2-5 col-sm-6 text-center">
+                    <div class="card h-100 border-0 bg-transparent">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80" alt="Secretaria" class="member-avatar shadow">
+                        <div class="card-body p-0">
+                            <h5 class="fw-bold mb-1">María López</h5>
+                            <p class="text-primary small fw-semibold">Secretaria</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2-5 col-sm-6 text-center">
+                    <div class="card h-100 border-0 bg-transparent">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Tesorero" class="member-avatar shadow">
+                        <div class="card-body p-0">
+                            <h5 class="fw-bold mb-1">Juan Martínez</h5>
+                            <p class="text-primary small fw-semibold">Tesorero</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2-5 col-sm-6 text-center">
+                    <div class="card h-100 border-0 bg-transparent">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80" alt="Vocal" class="member-avatar shadow">
+                        <div class="card-body p-0">
+                            <h5 class="fw-bold mb-1">Lucía Fernández</h5>
+                            <p class="text-primary small fw-semibold">Vocal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                    <h5 class="fw-bold text-uppercase text-secondary small">Oficina Central</h5>
+                    <p class="mb-1"><i class="bi bi-geo-alt-fill me-2 text-primary"></i> Av. Principal 1234, Ciudad Autónoma</p>
+                    <p class="mb-0 text-muted small">&copy; 2026 Cooperativa Ltda. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <h5 class="fw-bold text-uppercase text-secondary small mb-3">Síguenos en Redes</h5>
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                        <a href="https://facebook.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle" style="width: 40px; height: 40px; align-content: center;"><i class="bi bi-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle" style="width: 40px; height: 40px; align-content: center;"><i class="bi bi-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle" style="width: 40px; height: 40px; align-content: center;"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://linkedin.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle" style="width: 40px; height: 40px; align-content: center;"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
