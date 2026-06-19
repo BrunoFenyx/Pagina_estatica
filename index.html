@@ -41,6 +41,20 @@
             background-color: #da3071;
             color: #ffffff !important; /* El logo se vuelve blanco */
         }
+
+        /* Estado inicial: oculto y desplazado 50px hacia abajo */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            will-change: opacity, transform;
+        }
+
+        /* Estado activo: visible y en su posición original */
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
 <body>
@@ -73,7 +87,7 @@
         </div>
     </nav>
 
-    <section id="quienes-somos" class="bg-light">
+    <section id="quienes-somos" class="bg-light fade-in-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 mb-4 mb-md-0">
@@ -92,7 +106,7 @@
         </div>
     </section>
 
-    <section id="donde-operamos">
+    <section id="donde-operamos" class="fade-in-section">
         <div class="container-fluid px-0">
             <div class="container mb-4">
                 <div class="row text-center">
@@ -108,7 +122,7 @@
         </div>
     </section>
 
-    <section id="agua-potable" class="bg-light">
+    <section id="agua-potable" class="bg-light fade-in-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 order-md-2 mb-4 mb-md-0">
@@ -127,7 +141,7 @@
         </div>
     </section>
 
-    <section id="centros-medicos">
+    <section id="centros-medicos" class="fade-in-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 mb-4 mb-md-0">
@@ -152,7 +166,7 @@
         </div>
     </section>
 
-    <section id="comision" class="bg-light">
+    <section id="comision" class="bg-light fade-in-section">
         <div class="container">
             <div class="row text-center mb-5">
                 <div class="col-12">
@@ -257,4 +271,30 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const sections = document.querySelectorAll('.fade-in-section');
+
+        const options = {
+            root: null, // Usa el viewport del navegador
+            rootMargin: "0px",
+            threshold: 0.15 // Se activa cuando el 15% de la sección es visible
+        };
+
+        const observer = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    // Opcional: deja de observar la sección una vez que ya apareció
+                    observer.unobserve(entry.target); 
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    });
+</script>
 </html>
